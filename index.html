@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Python Website</title><style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #151515;
+        color: white;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .box {
+        background: #252525;
+        padding: 25px;
+        border-radius: 15px;
+        max-width: 400px;
+        margin: 30px auto;
+    }
+
+    input {
+        width: 90%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    button {
+        background: #00c853;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .result {
+        color: #00e676;
+        overflow-wrap: anywhere;
+        margin-top: 15px;
+    }
+</style>
+
+</head><body>
+    <h1>:snake: My Python Website</h1><div class="box">
+    <h2>Password 1</h2>
+
+    <form method="POST">
+        <input
+            type="password"
+            name="password1"
+            placeholder="Enter password 1"
+            required
+        >
+
+        <h2>Password 2</h2>
+
+        <input
+            type="password"
+            name="password2"
+            placeholder="Enter password 2"
+            required
+        >
+
+        <br>
+        <button type="submit">Run Python</button>
+    </form>
+
+    {% if result1 %}
+        <p class="result">{{ result1 }}</p>
+    {% endif %}
+
+    {% if result2 %}
+        <p class="result">{{ result2 }}</p>
+    {% endif %}
+</div>
+
+</body>
+</html>
